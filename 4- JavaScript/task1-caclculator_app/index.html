@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Simple Calculator App</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Simple Calculator App</h1>
+
+    <div class="container">
+      <form>
+        <div class="input-box">
+          <label class="label" for="num-one">Number One:</label>
+          <input
+            class="input num-one"
+            type="number"
+            name="num-one"
+            id="num-one"
+            placeholder="Enter number one"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="num-two">Number Two:</label>
+          <input
+            class="input num-two"
+            type="number"
+            name="num-two"
+            id="num-two"
+            placeholder="Enter number two"
+          />
+        </div>
+        <div class="input-box buttons">
+          <button class="btn btn-addition">+</button>
+          <button class="btn btn-subtraction">-</button>
+          <button class="btn btn-multiplication">*</button>
+          <button class="btn btn-division">/</button>
+        </div>
+
+        <div class="input-box">
+          <label class="label" for="result">Result: </label>
+          <input
+            class="input result"
+            type="number"
+            name="result"
+            id="result"
+            readonly
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

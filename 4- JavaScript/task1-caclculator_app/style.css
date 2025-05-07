@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* (10px / 16px) * 100 = (62.5% == 10px) */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding-block: 2.4rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  background-color: rgb(113, 129, 38);
+  margin: 0 auto;
+  padding: 3.6rem 1rem;
+  border-radius: 0.4rem;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2.6rem;
+  row-gap: 6rem;
+}
+
+.input-box {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 1rem 1.8rem;
+  border: 0.1px solid #777;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.buttons {
+  flex-basis: 80%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.btn {
+  flex-basis: 40%;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+}
