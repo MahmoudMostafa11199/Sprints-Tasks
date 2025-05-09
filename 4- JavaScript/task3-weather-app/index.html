@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+
+    <!------------------ Google Font ------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <form>
+          <label for="search">
+            <img
+              class="search-icon"
+              src="./imgs/search.png"
+              alt="search icon"
+            />
+          </label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Enter city"
+            value="Dubai"
+          />
+          <button type="submit" class="btn-search">Search</button>
+        </form>
+
+        <div class="weather">
+          <div class="weather-header">
+            <p>
+              <span class="city">Dubai</span> -
+              <span class="country-code">AE</span>
+            </p>
+            <time class="date" datetime="2024-12-22">22-12-2024</time>
+          </div>
+
+          <div class="weather-temp">
+            <p class="temp">
+              <span class="temp-value">23</span>
+              <span class="temp-symbol">&deg;</span>C
+            </p>
+            <p class="condition">clear sky</p>
+          </div>
+
+          <div class="weather-footer">
+            <div class="humidity">
+              <img
+                class="water-drop"
+                src="./imgs/water-drop.png"
+                alt="water drop icon"
+              />
+              <span><span class="humidity-value">49</span>%</span>
+            </div>
+            <span class="color"></span>
+          </div>
+        </div>
+
+        <img src="./imgs/mist.png" alt="weather icon" class="weather-icon" />
+      </div>
+    </section>
+  </body>
+</html>
