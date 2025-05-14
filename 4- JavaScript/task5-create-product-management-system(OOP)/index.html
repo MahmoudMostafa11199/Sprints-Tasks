@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!------------------ Google Font ------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Product Management System</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <h1 class="heading-primary">Product Management System</h1>
+
+    <main>
+      <section>
+        <div class="container">
+          <h2 class="heading-secondary">Add Product</h2>
+          <form id="form-add">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              class="input"
+              type="number"
+              name="price"
+              id="price"
+              min="1"
+              step="0.01"
+              placeholder="Price"
+            />
+            <input
+              class="input"
+              type="text"
+              name="category"
+              id="category"
+              placeholder="Category"
+            />
+            <button class="btn btn-add" type="submit">Add Product</button>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="heading-secondary">Edit Product</h2>
+          <form id="form-edit">
+            <input
+              class="input"
+              type="text"
+              name="edit-name"
+              id="edit-name"
+              placeholder="Product Name to Edit"
+            />
+            <input
+              class="input"
+              type="number"
+              name="new-price"
+              id="new-price"
+              min="1"
+              step="0.01"
+              placeholder="New Price"
+            />
+            <input
+              class="input"
+              type="text"
+              name="new-category"
+              id="new-category"
+              placeholder="New Category"
+            />
+            <button class="btn btn-edit" type="submit">Edit Product</button>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="heading-secondary">Delete Product</h2>
+          <form id="form-delete">
+            <input
+              class="input"
+              type="text"
+              name="delete-name"
+              id="delete-name"
+              placeholder="Product Name to Delete"
+            />
+            <button class="btn btn-delete" type="submit">Delete Product</button>
+          </form>
+        </div>
+      </section>
+
+      <div class="container">
+        <hr />
+      </div>
+
+      <section>
+        <div class="container">
+          <h2 class="heading-secondary">Product List</h2>
+
+          <table class="products-table">
+            <thead class="product-heading">
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody class="products">
+              <!-- <tr>
+                <td class="product-number">1</td>
+                <td>Smart Phone</td>
+                <td>$100</td>
+                <td>Mobile</td>
+              </tr>
+              <tr>
+                <td class="product-number">2</td>
+                <td>Smart Phone</td>
+                <td>$100</td>
+                <td>Mobile</td>
+              </tr> -->
+            </tbody>
+          </table>
+          <!-- <div class="products">
+            <div class="product-cart">
+              <p class="product-name">Smart Phone</p>
+              <p class="product-price">$100</p>
+              <p class="product-category">Mobile</p>
+            </div>
+          </div> -->
+          <p class="no-product hidden">No Products available.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
