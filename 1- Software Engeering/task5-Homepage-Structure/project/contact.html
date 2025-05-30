@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Posts | Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blog.html">Blog Posts</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Contact Us</h2>
+        <form action="/submit" method="post">
+          <div>
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+
+          <div>
+            <label for="email">Your Email:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div>
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Send Message" />
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Contact Informatio</h2>
+        <table cellspacing="10">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Opening Time</th>
+              <th>Closing Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>9:00AM</td>
+              <td>5:00PM</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>9:00AM</td>
+              <td>5:00PM</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>9:00AM</td>
+              <td>5:00PM</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          For further inquiries, you can also email us at
+          <a href="mailto:info@myblog.com"> info@myblog.com </a>
+        </p>
+      </section>
+    </main>
+
+    <footer style="text-align: center">
+      <p>&copy;Copyright by Mahmoud Mostafa</p>
+    </footer>
+  </body>
+</html>
