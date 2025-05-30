@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BwKlyRimbMEbIUfPrC6_-3" value="Portfolio Website" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="308" y="123" width="100" height="437" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKlyRimbMEbIUfPrC6_-4" value="Project" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="571" y="123" width="100" height="437" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKlyRimbMEbIUfPrC6_-5" value="ContactForm" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="808" y="123" width="100" height="437" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKlyRimbMEbIUfPrC6_-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Request Project Details&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="BwKlyRimbMEbIUfPrC6_-4">
+          <mxGeometry x="0.0025" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="357.16666666666674" y="239.5" as="sourcePoint" />
+            <mxPoint x="555.5" y="239.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Return Project Info&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620.5" y="282.5" as="sourcePoint" />
+            <mxPoint x="357.5" y="282.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Submit Contact Form&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="357.5" y="374.5" as="sourcePoint" />
+            <mxPoint x="857.5" y="374.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-3" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Validate and send message&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="857.5" y="457.5" as="sourcePoint" />
+            <mxPoint x="357.5" y="457.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-4" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="123" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Click on a project&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="94" y="222" as="sourcePoint" />
+            <mxPoint x="357.5" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-10" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="560" as="sourcePoint" />
+            <mxPoint x="95" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Fill contact form&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95.99666666666675" y="330" as="sourcePoint" />
+            <mxPoint x="359.83000000000004" y="330.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zHaYaa8GM_qsKvwAMF1O-14" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Show success/failure &lt;br&gt;message&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0038" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="358" y="480" as="sourcePoint" />
+            <mxPoint x="95" y="480" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
