@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Blog</title>
+
+    <!----------------- Google Font ----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------- Toastify Notification ----------------->
+    <!-- JavaScript File -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!-- CSS File -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <h1 class="heading-primary">Posts</h1>
+          <div class="post add-post">&plus;</div>
+          <div class="posts">
+            <div class="spinner hidden"></div>
+
+            <!---------------- Show Modal to Add Post ---------------->
+            <div class="modal hidden">
+              <button class="btn__close-modal">&times;</button>
+              <form>
+                <input
+                  class="post-title__input"
+                  type="text"
+                  name="post-title"
+                  id="post-title"
+                  placeholder="Enter post title"
+                  required
+                />
+                <textarea
+                  class="post-title__body"
+                  name="post-body"
+                  id="post-body"
+                  rows="5"
+                  placeholder="Enter post body"
+                  required
+                ></textarea>
+                <button class="btn__add-post" type="submit">Add</button>
+              </form>
+            </div>
+            <div class="overlay hidden"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
