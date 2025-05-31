@@ -138,6 +138,7 @@ const addTask = () => {
   tasks = updateTasks;
 
   saveToLocalStorage();
+  noTasksMessage();
   displayTasks(newTask);
   showNotification('Task added successfully!');
   resetForm();
