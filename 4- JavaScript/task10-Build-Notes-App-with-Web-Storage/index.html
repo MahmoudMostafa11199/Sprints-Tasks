@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Notes App</title>
+
+    <!----------------- Page Icon ----------------->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link rel="manifest" href="./img/site.webmanifest" />
+
+    <!----------------- Google Font ----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------- Toastify Notification ----------------->
+    <!-- JavaScript File -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!-- CSS File -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <div class="heading-box">
+          <img src="./img/notes.png" alt="notes icon" class="note-img" />
+          <h1 class="heading-primary">Notes</h1>
+        </div>
+
+        <div class="container">
+          <form>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Note Title"
+            />
+            <textarea
+              name="description"
+              id="description"
+              placeholder="Note Description"
+            ></textarea>
+            <button type="submit" class="btn btn-add">Add Note</button>
+          </form>
+
+          <div class="notes-list">
+            <ul></ul>
+
+            <p class="no-notes-message hidden">No notes for now!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
