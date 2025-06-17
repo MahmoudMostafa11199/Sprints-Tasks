@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* (10px / 16px) * 100 ==> 62.5% === 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  /* background-color: #efefef; */
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1.8rem;
+}
+
+section {
+  padding-block: 3.6rem;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  padding-block: 3.6rem;
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+form .input {
+  flex-basis: 25%;
+}
+
+form .btn {
+  flex-basis: 20%;
+}
+
+.input,
+.btn {
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.input {
+  padding: 1rem;
+  border: 1px solid #333;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.btn {
+  padding: 0.9rem 1rem;
+  background-color: #07b607;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: #069906;
+}
+
+.btn-delete {
+  background-color: #d72b2b;
+}
+.btn-delete:hover {
+  background-color: #c12828;
+}
+
+.products-table {
+  width: 100%;
+  background-color: #f7f8f9;
+  border-radius: 0.4rem;
+}
+
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.8rem;
+}
+
+.product-heading tr {
+  background-color: #c5cad3;
+}
+
+.products tr:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+td,
+th {
+  text-align: start;
+  flex-basis: calc(25% - 1rem);
+}
+
+.product-number {
+  font-weight: 500;
+}
+
+.no-product {
+  font-size: 1.8rem;
+  background-color: #efefef;
+  padding: 1.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  form .input,
+  form .btn {
+    flex-basis: 45%;
+  }
+
+  .heading-primary {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading-primary {
+    font-size: 2.8rem;
+  }
+
+  table {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  form {
+    flex-direction: column;
+    align-items: inherit;
+  }
+}
