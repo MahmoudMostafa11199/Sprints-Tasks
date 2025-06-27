@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+}
+
+h1,
+h3 {
+  padding-block: 24px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+
+/*--------- V-UI-required ---------*/
+.form-ui {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 10px;
+  margin-block: 20px 28px;
+}
+
+.title-lap-ui,
+.save-lap-ui {
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.laps-list {
+  max-width: fit-content;
+  max-height: 70vh;
+  overflow-y: auto;
+  text-align: start;
+  list-style: none;
+  padding-inline: 10px;
+  color: #000;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lap {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  padding: 14px 24px;
+  border-radius: 4px;
+  background-color: burlywood;
+}
+
+.delete-lap-ui {
+  background-color: #f00;
+  color: #fff;
+  padding: 6px;
+}
+
+/*--------- V-descript-required ---------*/
+.stopWatch-value {
+  margin-bottom: 18px;
+}
+
+.form-desc {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 16px;
+}
