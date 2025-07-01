@@ -1,0 +1,27 @@
+main {
+  min-height: 100vh;
+}
+
+.custom-category {
+  font-size: 13px;
+  top: 14px;
+  right: 14px;
+}
+
+.task.work {
+  --text-color: rgb(var(--bs-success-rgb)) !important;
+}
+.task.personal {
+  --text-color: rgb(var(--bs-primary-rgb)) !important;
+}
+.task.urgent {
+  --text-color: rgb(var(--bs-danger-rgb)) !important;
+}
+
+.task {
+  border-left-color: var(--text-color) !important;
+}
+
+.task .category {
+  background-color: var(--text-color) !important;
+}
