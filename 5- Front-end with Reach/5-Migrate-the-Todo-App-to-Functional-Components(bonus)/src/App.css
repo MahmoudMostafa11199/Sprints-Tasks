@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* (10/16)*100 = 62.5% */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background: linear-gradient(
+    90deg,
+    rgba(186, 186, 164, 1),
+    rgba(159, 197, 214, 1)
+  );
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4.6rem;
+  padding-block: 2.4rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+form {
+  background-color: #ddd;
+  padding: 2rem;
+  margin-bottom: 3.6rem;
+  border-radius: 1rem;
+
+  display: flex;
+  gap: 2rem;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem 1.6rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+}
+
+input {
+  flex: 1;
+}
+
+.buttons {
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-add,
+.btn-delete {
+  background-color: #f34235;
+  color: #fff;
+}
+
+.tasks-list {
+  min-height: 4rem;
+  padding: 2rem;
+  background-color: #ddd;
+  border-radius: 1rem;
+}
+
+.tasks-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.task-item {
+  flex: 1 0 45%;
+  background-color: #fff;
+  padding: 2rem 1.6rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+
+.task-title {
+  padding: 0;
+}
+.task-title:not(:read-only) {
+  border: 1px solid #333;
+}
+
+.task-item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tasks-list .btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.4rem;
+}
+
+.btn-edit {
+  background-color: #ddd;
+}
+
+.btn-delete {
+  background-color: #fe0000;
+  margin-left: 0.2rem;
+}
+
+.btn-completed[data-isCompleted='true'] {
+  background-color: #9f9;
+}
+
+.btn-completed[data-isCompleted='false'] {
+  background-color: rgb(182, 127, 115);
+  background-color: grey;
+}
+
+.no-tasks-message {
+  text-align: center;
+}
+
+.no-tasks-message.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 37.5em) {
+  form {
+    flex-direction: column;
+  }
+
+  .tasks-list ul {
+    flex-direction: column;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-item > div {
+    width: 100%;
+  }
+}
