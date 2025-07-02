@@ -62,7 +62,7 @@ class StopWatch extends React.Component {
       };
 
       this.setState((state) => ({
-        laps: [...state.laps, newLap],
+        laps: [newLap, ...state.laps],
       }));
     }
   };
@@ -83,7 +83,7 @@ class StopWatch extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="stopWatch">
         <p className="stopWatch-value">
           {this.formatTime(this.state.elapsedTime)}
         </p>
@@ -96,13 +96,25 @@ class StopWatch extends React.Component {
           >
             Start
           </button>
-          <button onClick={this.stopTimer} className="btn btn--stop">
+          <button
+            onClick={this.stopTimer}
+            className="btn btn--stop"
+            disabled={!this.state.isRunning}
+          >
             Stop
           </button>
-          <button onClick={this.onLap} className="btn btn--lap">
+          <button
+            onClick={this.onLap}
+            className="btn btn--lap"
+            disabled={!this.state.isRunning}
+          >
             Lap
           </button>
-          <button onClick={this.resetTimer} className="btn btn--reset">
+          <button
+            onClick={this.resetTimer}
+            className="btn btn--reset"
+            disabled={this.state.isRunning || !this.state.elapsedTime}
+          >
             Reset
           </button>
         </div>
@@ -110,13 +122,13 @@ class StopWatch extends React.Component {
         <h3>{this.state.laps.length} Lap(s)</h3>
 
         <ol className="laps-list">
-          {this.state.laps.reverse().map((lap) => (
+          {this.state.laps.map((lap) => (
             <li className="lap" key={lap.id}>
               {lap.id}: {lap.time}
             </li>
           ))}
         </ol>
-      </React.Fragment>
+      </div>
     );
   }
 }

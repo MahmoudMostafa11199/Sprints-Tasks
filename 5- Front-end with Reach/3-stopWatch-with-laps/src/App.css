@@ -4,16 +4,25 @@
   box-sizing: border-box;
 }
 
+*:disabled {
+  cursor: not-allowed;
+}
+
 .App {
   min-height: 100vh;
   text-align: center;
-  background-color: #282c34;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 51, 56, 1) 0%,
+    rgba(54, 76, 102, 1) 50%,
+    rgba(74, 74, 54, 1) 100%
+  );
   color: white;
+  padding-block: 28px;
 }
 
-h1,
-h3 {
-  padding-block: 24px;
+h1 {
+  margin-bottom: 80px;
 }
 
 button {
@@ -22,20 +31,22 @@ button {
   border-radius: 4px;
 }
 
-/*--------- V-UI-required ---------*/
-.form-ui {
-  max-width: fit-content;
-  display: flex;
-  flex-direction: column;
+.stopWatch {
+  width: 100%;
+  max-width: 600px;
   margin-inline: auto;
-  gap: 10px;
-  margin-block: 20px 28px;
+  padding: 36px;
+  background: linear-gradient(
+    90deg,
+    rgba(47, 48, 51, 1) 0%,
+    rgba(52, 59, 53, 1) 50%,
+    rgba(43, 43, 36, 1) 100%
+  );
+  border-radius: 10px;
 }
 
-.title-lap-ui,
-.save-lap-ui {
-  padding: 12px;
-  border-radius: 10px;
+h3 {
+  margin-bottom: 14px;
 }
 
 .laps-list {
@@ -44,7 +55,7 @@ button {
   overflow-y: auto;
   text-align: start;
   list-style: none;
-  padding-inline: 10px;
+  padding-inline: 20px;
   color: #000;
   margin-inline: auto;
 
@@ -61,6 +72,21 @@ button {
   border-radius: 4px;
   background-color: burlywood;
 }
+/*--------- V-UI-required ---------*/
+.form-ui {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 10px;
+  margin-block: 20px 28px;
+}
+
+.title-lap-ui,
+.save-lap-ui {
+  padding: 12px;
+  border-radius: 10px;
+}
 
 .delete-lap-ui {
   background-color: #f00;
@@ -70,7 +96,8 @@ button {
 
 /*--------- V-descript-required ---------*/
 .stopWatch-value {
-  margin-bottom: 18px;
+  font-size: 36px;
+  margin-bottom: 28px;
 }
 
 .form-desc {
