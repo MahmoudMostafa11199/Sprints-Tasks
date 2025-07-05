@@ -11,7 +11,7 @@ A simple and responsive weather dashboard built with React.js and Tailwind CSS. 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/weather-dashboard.git
+   git clone https://github.com/MahmoudMostafa11199/Sprints-Tasks/tree/main/5-%20Front-end%20with%20Reach/7-Weather-Dashboard
    cd weather-dashboard
    ```
 
