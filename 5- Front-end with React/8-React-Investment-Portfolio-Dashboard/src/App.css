@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@layer components {
+  .input {
+    @apply ps-4 pe-6 py-3 border border-gray-300 rounded outline-0;
+  }
+
+  .input-box {
+    @apply grid grid-cols-[240px_1fr_1.2fr] gap-3 items-center py-3 border-b border-gray-200;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

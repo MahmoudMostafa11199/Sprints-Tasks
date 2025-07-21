@@ -1,0 +1,74 @@
+{
+  "assets": [
+    {
+      "id": "ass-1",
+      "name": "Apple Inc.",
+      "symbol": "AAPL",
+      "type": "stock",
+      "quantity": 50,
+      "buyPrice": 150,
+      "currentPrice": 175.5,
+      "updatedAt": "2025-07-19T17:19:30.701Z"
+    },
+    {
+      "id": "ass-2",
+      "name": "Amazon.com Inc.",
+      "symbol": "AMZN",
+      "type": "crypto",
+      "quantity": 10,
+      "buyPrice": 3200,
+      "currentPrice": 3500,
+      "updatedAt": "2025-07-20T19:42:22.477Z"
+    },
+    {
+      "id": "ass-3",
+      "name": "US Treasury Bond",
+      "symbol": "USTB",
+      "type": "bond",
+      "quantity": 100,
+      "buyPrice": 98,
+      "currentPrice": 132,
+      "updatedAt": "2025-07-20T23:37:23.831Z"
+    },
+    {
+      "id": "ass-4",
+      "name": "Meta Platforms",
+      "symbol": "META",
+      "type": "stock",
+      "quantity": 20,
+      "buyPrice": 350,
+      "currentPrice": 290,
+      "updatedAt": "2025-07-20T18:11:22.135Z"
+    },
+    {
+      "id": "ass-5",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "type": "crypto",
+      "quantity": 1,
+      "buyPrice": 61000,
+      "currentPrice": 56000,
+      "updatedAt": "2025-07-17T09:15:00Z"
+    },
+    {
+      "id": "ass-6",
+      "name": "Tesla Inc.",
+      "symbol": "TSLA",
+      "type": "bond",
+      "quantity": 15,
+      "buyPrice": 800,
+      "currentPrice": 740,
+      "updatedAt": "2025-07-20T19:41:58.352Z"
+    },
+    {
+      "id": "1753040605595",
+      "name": "Microsoft Corp.",
+      "symbol": "msft",
+      "type": "stock",
+      "quantity": 30,
+      "buyPrice": 280,
+      "currentPrice": 280,
+      "updatedAt": "2025-07-21T12:04:26.564Z"
+    }
+  ]
+}
